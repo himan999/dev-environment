@@ -28,8 +28,14 @@ mkdir -p /data/db
 sudo chmod 0755 /data/db && sudo chown $USER /data/db
 
 echo "installing php with postgres"
+brew tap homebrew/homebrew-php
+brew install php56
 
-brew install php56 --with-postgres
+brew install postgres
+
+brew install php56-pdo-pgsql
+
+brew install redis
 
 echo "installing php mongo driver"
 
