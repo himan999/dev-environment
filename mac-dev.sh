@@ -1,13 +1,13 @@
 #!/bin/sh
 echo "Setting up development environment for your Mac"
 echo "beginning installation .... be sure to enter your password when prompted"
-xcode-select –install
+xcode-select -–install
 
 echo "xcode installed"
 
 echo "installing homebrew - awesome tool for your mac"
 
-ruby -e “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew doctor
 
