@@ -43,24 +43,24 @@ brew install php56-mongo
 
 echo "#!/bin/sh
 run_comm() {
-	brew services $1 php56
-	brew services $1 mongodb
-	brew services $1 postgresql
+	brew services \$1 php56
+	brew services \$1 mongodb
+	brew services \$1 postgresql
 }
 
-if [[ $1 == 'start' ]]; then
+if [[ \$1 == 'start' ]]; then
 	#statements
-	run_comm $1
+	run_comm \$1
 
-elif [[ $1 == 'stop' ]]; then
+elif [[ \$1 == 'stop' ]]; then
 	#statements
-	run_comm $1
+	run_comm \$1
 
-elif [[ $1 == 'restart' ]]; then
+elif [[ \$1 == 'restart' ]]; then
 	#statements
-	run_comm $1
+	run_comm \$1
 else
-	echo "usage: sh dev.sh start|stop|restart" 
+	echo 'usage: sh dev.sh start|stop|restart'
 fi" > /Users/$USER/Desktop/dev.sh
 
 echo "use the sh file created on your desktop to start|stop|restart the services"
